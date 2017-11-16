@@ -9,13 +9,14 @@ package datos;
  *
  * @author ESTUDIANTE
  */
-public class EducacionContinuada extends Sede {
+public class EduContinuada extends Sede {
 
-    public EducacionContinuada(String nombre, String direccion, int telefono, double areaContruida) {
+    private String programaP;
+
+    public EduContinuada( String nombre, String direccion, int telefono, double areaContruida,String programaP) {
         super(nombre, direccion, telefono, areaContruida);
+        this.programaP = programaP;
     }
-
-    
 
     @Override
     public String darInfo() {

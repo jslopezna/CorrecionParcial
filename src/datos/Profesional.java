@@ -14,22 +14,43 @@ import java.util.ArrayList;
 public class Profesional extends Sede {
 
     private int noProgramas;
-    private ArrayList<EducacionContinuada> EduContinua;
-    private ArrayList<Tecnologico> tecnologico;
+    private ArrayList<ProgFormacion> programas;
+    private ArrayList<String> EduContinua;
+    private ArrayList<String> tecnologico;
 
-    public Profesional( String nombre, String direccion, int telefono, double areaContruida,int  noProgramas) {
+    public Profesional(String nombre, String direccion, int telefono, double areaContruida, int noProgramas) {
         super(nombre, direccion, telefono, areaContruida);
         this.noProgramas = noProgramas;
         this.EduContinua = EduContinua;
     }
 
     public String darInfo() {
-        String info = nombre + direccion + telefono + areaContruida;
+        String programa = null;
+        String continua = null;
+        String tecnologicos = null;
+        for (int i = 0; i <= programas.size(); i++) {
+            programa += "/n" + programas.get(i).getNombre();
+            tecnologicos += "/n" + tecnologico.get(i);
+            continua += "/n" + EduContinua.get(i);
+
+        }
+        String info = nombre + direccion + telefono + areaContruida + programa + tecnologico+ continua;
         return info;
     }
 
-    public void addEdu(String nombre, String direccion, int telefono, double areaContruida) {
-        
+    public void addPrograma(String name, String descripcion) {
+        ProgFormacion programa = new ProgFormacion(name, descripcion);
+        programas.add(programa);
     }
-       
+
+    public void addTecno(String nombre) {
+        tecnologico.add(nombre);
+
+    }
+
+    public void addEdu(String nombre) {
+        EduContinua.add(nombre);
+
+    }
+
 }

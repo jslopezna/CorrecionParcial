@@ -57,7 +57,7 @@ public abstract class Sede {
         this.areaContruida = areaContruida;
     }
 
-    void addEdu(EducacionContinuada edu) {
+    void addEdu(EduContinuada edu) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 

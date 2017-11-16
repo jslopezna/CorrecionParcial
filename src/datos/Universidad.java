@@ -19,15 +19,18 @@ public class Universidad {
         this.sedes = sedes;
     }
 
-   public void addSedeProfesional(String nombre, String direccion, int tel, double area, int programas) {
-        Sede profesional= new Profesional(nombre, direccion, tel, area, programas); 
-        //profesional.addEdu(edu); 
-        sedes.add(profesional); 
+    public void addProfesional(Profesional profesional) {
+
+        sedes.add(profesional);
 
     }
-   
-   public void addtecnologo(String nombre, String direccion, int tel, double area, int programas){
-       Sede tecnologo= new Tecnologico(programas,nombre, direccion, tel,area); 
-   }
+
+    public void addTecnologo(Tecnologico tecnologico) {
+        sedes.add(tecnologico);
+    }
+
+    public ArrayList<Sede> getSedes() {
+        return sedes;
+    }
 
 }

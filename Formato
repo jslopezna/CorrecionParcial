@@ -1,3 +1,5 @@
-P, Rosario, Direccion, Tel,areaConttruida,  Jurispridecia, Tecnologo, EduContinua
-T, Sena, Direccion, Tel,areaConttruida, 64
-E, Direccion, Tel,areaConttruida 
+P, Rosario, Direccion,6706960,1000,1,Jurispridecia, Descripcion, Tecnologo, EduContinua
+
+T, Sena, Direccion,3042187060,2000, 100,Jurispridecia, Descripcion
+
+E,nombre, Direccion, 4655633,4000, nombre programa

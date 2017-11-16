@@ -8,4 +8,7 @@
     no es igual en la segunda imagen, los mismo pasa con el metodo abtracto que se define en la primera imagen. 
 
 2.
+P, Rosario, Direccion, Tel,areaConttruida,no Programas,Jurispridecia, Descripcion, Tecnologo, EduContinua
+T, Sena, Direccion, Tel,areaConttruida, noEstudiantes,Jurispridecia, Descripcion
+E,nombre, Direccion, Tel,areaConttruida, nombre programa
 
